@@ -18,7 +18,6 @@ return <div>hello {data.name}! </div>*/
       <h1>Art Gallery</h1>
       {/* <ArtPieces pieces={artPieces} />; */}
       <Spotlight pieces={pieces} />
-      <Navigation />
     </>
   );
 }

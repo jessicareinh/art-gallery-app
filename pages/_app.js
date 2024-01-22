@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useSWR from "swr";
 import GlobalStyle from "../styles";
-import Layout from "@/components/Layout";
+import Layout from "@/components/Layout/Layout";
 
 const fetcher = (url) => fetch(url).then((response) => response.json());
 
