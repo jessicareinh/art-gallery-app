@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useSWR from "swr";
 import GlobalStyle from "../styles";
+import Layout from "@/components/Layout";
 
 const fetcher = (url) => fetch(url).then((response) => response.json());
 
@@ -22,9 +23,10 @@ export default function MyApp({ Component, pageProps }) {
   console.log(pieces);
 
   return (
-    <>
+    <div>
       <GlobalStyle />
       <Component {...pageProps} pieces={pieces} />
-    </>
+      <Layout />
+    </div>
   );
 }
