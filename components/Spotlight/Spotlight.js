@@ -2,13 +2,11 @@ import React from "react";
 import Image from "next/image";
 
 export default function Spotlight({ pieces }) {
-  // Function to pick one art piece at random
   function getRandomArtPiece() {
     const randomIndex = Math.floor(Math.random() * pieces.length);
     return pieces[randomIndex];
   }
 
-  // Get a random art piece
   const randomArtPiece = getRandomArtPiece();
 
   return (
